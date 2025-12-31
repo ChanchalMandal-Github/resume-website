@@ -17,6 +17,8 @@
       <p class="subtitle">Aspiring Frontend Developer</p>
     </header>
 
+    <button id="contactBtn">Contact Me</button>
+    
     <section>
       <h2>About Me</h2>
       <p>
@@ -54,6 +56,15 @@
           using GitHub Pages. Added basic JavaScript to improve user interaction.
           Focused on clean code structure, readability, and usability.
         </p>
+        <ul>
+          <li>Implemented responsive layout and clean UI for easy reading</li>
+          <li>Added JavaScript interaction for smooth navigation and contact focus</li>
+          <li>Deployed the website using GitHub Pages with version control</li>
+        </ul>
+        <p>
+          <strong>Live:</strong> <a href="https://chanchalmandal-github.github.io/resume-website/" target="_blank">View Website</a><br>
+          <strong>Code:</strong> <a href="https://github.com/ChanchalMandal-Github/resume-website" target="_blank">GitHub Repository</a>
+        </p>
       </div>
 
       <div class="project">
@@ -90,6 +101,16 @@
       </p>
     </section>
   </div>
+
+  <script>
+    document.getElementById("contactBtn").addEventListener("click", function () {
+      document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+      });
+
+      document.getElementById("emailLink").focus();
+    });
+  </script>
 
 </body>
 
